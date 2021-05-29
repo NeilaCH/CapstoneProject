@@ -1,1 +1,1 @@
-# SturbucksCapstoneProject
+# Udacity Sturbucks Capstone Project
