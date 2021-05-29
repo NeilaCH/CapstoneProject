@@ -21,6 +21,7 @@ The data is contained in three files:
 The explored dataset includes simulated data that act out customers behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks. Not all users receive the same offer, and that is the challenge to solve with this data set.
 ## 4. Results
 The exploration of the provided dataset highlighted that Starbucks customer demographic is ranging between 40 to 70 years old with with an average salary less than 70K.In addition, the curstomer membership distribution plot pointed out that the membership of customes range between 1000 and 2100 days. Regarding offers, it was noted that bogo and discount are mainly dominating.
+For more findings please check this [blog](https://chettaoui-neila.medium.com/udacity-starbucks-capstone-project-68f5127e29a9)
 ### License
 * The dataset used in this porject is provided by Starbucks. Thank you so much!
 * The porject is provided by [Udacity](https://www.udacity.com). Thank you for this challenge and the support.
