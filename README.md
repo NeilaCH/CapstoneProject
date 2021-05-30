@@ -33,6 +33,6 @@ Building student model will further support implementing recommendation strategi
 
 For more findings please check this [blog](https://chettaoui-neila.medium.com/udacity-starbucks-capstone-project-68f5127e29a9)
 ### License
-1. The dataset extracted from [Kaggle](https://www.kaggle.com/aljarah/xAPI-Edu-Data)
+1. The dataset is extracted from [Kaggle](https://www.kaggle.com/aljarah/xAPI-Edu-Data)
 2. Thank you Udacity for supporting the knowledge building
 3. Amrieh, E. A., Hamtini, T., & Aljarah, I. (2016). Mining Educational Data to Predict Student’s academic Performance using Ensemble Methods. International Journal of Database Theory and Application, 9(8), 119-136.
