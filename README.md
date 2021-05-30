@@ -1,4 +1,4 @@
-# Udacity Sturbucks Capstone Project
+# Udacity Capstone Project
 ## _Udacity Nanodegree Program_
 The project is for the [Data Scientist Udacity Nanodegree program](https://www.udacity.com/course/data-scientist-nanodegree--nd025).
 ### _Table of Contents_
@@ -8,24 +8,31 @@ The project is for the [Data Scientist Udacity Nanodegree program](https://www.u
   4. Results
   5. License
 ## 1. Project Motivation
-The problem that I chose to solve in this project focused on building a model that predicts the optimal offer should be sent to a customer and which offer got the best sales.
+The problem that I chose to solve in this project focused on predicting student performance based on their intercation behavior in e-learning platform.
 ## 2. Before running the project
 Before running the project you must have the following pakacges:
 - Python 3.7
 ## 3. Dataset Description
-The data is contained in three files:
-1. portfolio.json - containing offer ids and meta data about each offer (duration, type, etc.)
-2. profile.json - demographic data for each customer
-3. transcript.json - records for transactions, offers received, offers viewed, and offers completed
+The data is contained in a single file: education dataset - containing 480 student records and 16 features. 
+The features are classified into three major categories: 
+1. Demographic features such as gender and nationality. 
+2. Academic background features such as educational stage, grade Level and section.
+3. Behavioral features such as raised hand on class, opening resources, answering survey by parents, and school satisfaction.
 
-The explored dataset includes simulated data that act out customers behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free). Some users might not receive any offer during certain weeks. Not all users receive the same offer, and that is the challenge to solve with this data set.
+TThe dataset is available in [Kaggle](https://www.kaggle.com/aljarah/xAPI-Edu-Data). According to [Abu Amrieh et al. (2016)](http://article.nadiapub.com/IJDTA/vol9_no8/13.pdf) the data is collected using a learner activity tracker tool, which called experience API (xAPI). The xAPI is a component of the training and learning architecture (TLA) that enables to monitor learning progress and learner’s actions like reading an article or watching a training video. The experience API helps the learning activity providers to determine the learner, activity and objects that describe a learning experience.
 ## 4. Results
-The exploration of the provided dataset highlighted that Starbucks customer demographic is ranging between 40 to 70 years old with with an average salary less than 70K.In addition, the curstomer membership distribution plot pointed out that the membership of customes range between 1000 and 2100 days. Regarding offers, it was noted that bogo and discount are mainly dominating.
+The results pointed out that the use of features related to student profile, academic performance, and behavior with the virtual learning environment may lead to an accurate prediction of students performance while interacting with learning content. 
+The classification results revealed that Random Forest outperformed other classifiers for both datasets
+with an accuracy of 81%. With the set of selected features, the results highlighted that Random Forest classifier would rank a randomly selected student and predict their performance based on their academic and behavioral interaction with the learning platform.
+Further improvements are required including:
+1. The application of Gridsearch to find the optimal values for the classification model.
+2. Including further classification techniques in the comarative phase
+3. Explore features correlation to enhance the accuracy of the prediction model.
+Building student model will further support implementing recommendation strategies to (a) support the cognitive development of students, (b) detect their interaction behavior, (c) determine their preferences, and (d) empower their learning performance. Thus, in future work, I will consider examine the task of recommending activities to have a better understanding of the impact of interaction behavior  on student performance in e-learning environment.
+
+
 For more findings please check this [blog](https://chettaoui-neila.medium.com/udacity-starbucks-capstone-project-68f5127e29a9)
 ### License
-* The dataset used in this porject is provided by Starbucks. Thank you so much!
-* The porject is provided by [Udacity](https://www.udacity.com). Thank you for this challenge and the support.
-* Acknowledgment to: 
-   1. Implementing Recommendation Engine for Sturbucks [Andrea Xue](https://towardsdatascience.com/starbucks-offer-personalization-sending-the-right-offer-to-the-right-customer-14d4fbc20575)
-   2. Implementing FunkSVD [Medhy Vinceslas](https://medium.datadriveninvestor.com/how-funk-singular-value-decomposition-algorithm-work-in-recommendation-engines-36f2fbf62cac) and [Paul Stubley](https://towardsdatascience.com/personalised-restaurant-recommendations-using-funksvd-3beff200b01c )
-   3. The Medium Blog of [Joshua Yeung](https://medium.com/@joshua.chyeung/send-out-a-starbucks-offer-that-you-cannot-resist-2d4d7d18b417) guided me with understanding steps to implement the recommendation engine using Starbucks data. Thank you for sharing your valuable knowledge. 
+1. The dataset extracted from [Kaggle](https://www.kaggle.com/aljarah/xAPI-Edu-Data)
+2. Thank you Udacity for supporting the knowledge building
+3. Amrieh, E. A., Hamtini, T., & Aljarah, I. (2016). Mining Educational Data to Predict Student’s academic Performance using Ensemble Methods. International Journal of Database Theory and Application, 9(8), 119-136.
